@@ -1,0 +1,32 @@
+{
+  "name": "campaign-finance",
+  "version": "0.2.0",
+  "description": "Hackmit project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "ejs": "0.8.5",
+    "express": "^4.0.0",
+    "sendgrid": "^1.9.2"
+  },
+  "engines": {
+    "node": "0.12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-sample"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Mark Pundsack",
+  "contributors": [
+    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
+  ],
+  "license": "MIT"
+}
