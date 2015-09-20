@@ -1,8 +1,138 @@
 body{
-	background-color: #333333;
-	color:white;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-color: #FFFFFF;
+	color:#5A5A5A;
 	font-family: Century Gothic, sans-serif; 
 	font-size: 18px;
+	font-weight: normal;
+	overflow-x:hidden;
+}
+.navbar{
+	padding-top: 1em;
+	padding-bottom: .5em; 
+	padding-right: 3em;
+	text-align: left;
+	background-color: green;
+	/* Rectangle 1 Copy 2: */
+	background: #FCFCFC;
+	box-shadow: 0px 1px 6px 0px rgba(0,0,0,.1);
+}
+.navbar h1{
+	margin: 0;
+	margin-left: 1em;
+	display: inline-block;
+}
+.navbar p{
+	display: inline-block;
+	float: right;
 	margin: 1em;
+	line-height: 3em;
 
 }
+h1{
+	font-size: 3em;
+}
+h2{
+	font-size: 1.5em;
+	margin-bottom: 0em;
+	font-weight: normal;
+}
+.area{
+	margin-top: 7em;
+
+}
+.info{
+	text-align: left;
+	width: 20em;
+	margin: 0 auto;
+	padding-top: 1em;
+
+}
+#banner{
+	z-index: 10;
+}
+.issues{
+	text-align: left;
+	width: 30em;
+	margin: 0 auto;
+	display: none;
+}
+#issues-selection{
+	width: 21.7em;
+	margin-top: 1em;
+	/*padding: 10px;*/
+	background-color:  #787878;
+	/*padding-left: 15px;*/
+	font-size: 1.5em;
+	height: 9em;
+	overflow-y: scroll;
+}
+#issues-selection p{
+	margin: 0;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition: background-color .2s;
+	cursor: pointer;
+}
+#issues-selection p:hover{
+	background-color: #ACACAC;
+
+}
+#zipinput{
+ width: 12em;
+}
+#issues-input{
+	margin-top: 2em;
+	width: 20em;
+}
+.issue-selected{
+	background-color: #ACACAC;
+	transition: background-color .2s;
+}
+.issue-selected:hover{
+	background-color: #9E9E9E!important;
+}
+
+#next-1{
+	opacity:0;
+	cursor: pointer;
+}
+#next-2{
+	opacity:0;
+	cursor: pointer;
+}
+
+
+input{
+	/*display: block;*/
+    margin: 0.3em 0 0 0;
+    padding: 0.5em 1em 0.5em 0.7em;
+    border: none;
+    background-color: #787878;
+    color: rgba(0,0,0,.8);
+    font-size: 1em;
+    line-height: 1.5em;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+input[type='text']{
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: Century Gothic, sans-serif; 
+}
+
+input, select, textarea{
+    color: white;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+

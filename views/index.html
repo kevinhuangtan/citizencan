@@ -2,9 +2,51 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/info.js"></script>
+
 </head>
 
 <body>
-<h1>Citizen Can</h1>
+
+	<section class="area">
+		<h1>Citizen Can</h1>
+		<form id="user-form" action="/userInfo" method="POST">
+			<div class="info">
+				<h2>You are a citizen of</h2>
+				<input id="zipinput" name="zipinput" type="text" placeholder="zipcode" autocomplete="off" >
+				<p id="next-1">next</p>
+			</div>
+			<div class="issues">
+				<h2>What issues do you care about?</h2>
+				<div id="issues-selection">
+					<p>abortion</p>
+					<p>climate change</p>
+					<p>economy</p>
+					<p>education</p>
+					<p>gay marriage</p>
+					<p>gun rights</p>
+					<p>health care</p>
+					<p>immigration</p>
+					<p>Iran</p>
+					<p>private prisons</p>
+					<p>vaccinations</p>
+					<p>weed</p>
+					
+				</div>
+				<input id="issues-input" name ="issues" type="text" placeholder="add your own issue" autocomplete="off" >
+				<br>
+				<p id="next-2">next</p>
+
+			</div>
+			<input id="issuesjson" name ="issuesjson" type="text"autocomplete="off" style="opacity:0" >
+			<input type="submit" style="opacity:0" />
+		</form>
+	</section>
+	<section class="main">
+
+	</section>
+	
+
 </body>
 </html>
